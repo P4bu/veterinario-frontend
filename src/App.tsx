@@ -1,21 +1,16 @@
-import Sidebar from './components/Sidebar'
-import LoginPage from './pages/LoginPage'
-import { Box } from '@mui/material';
-import DashboardPage from './pages/DashboardPage';
-import Topbar from './components/Topbar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes';
 
 const App = () => {
   return (
     <>
-      {/* <LoginPage /> */}
+  
+      <Router>
+        <div>
+          <AppRoutes />
+        </div>
+      </Router>
 
-      <Box sx={{ display: 'flex' }}>
-        <Sidebar />
-        <Box sx={{ flexGrow: 1 }}>
-          <Topbar />
-          <DashboardPage />
-        </Box>
-      </Box>
     </>
     
   )
