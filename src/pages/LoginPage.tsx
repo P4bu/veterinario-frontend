@@ -1,16 +1,10 @@
-import {
-  Box,
-  TextField,
-  Button,
-  Typography,
-  Paper,
-} from '@mui/material';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Box, TextField, Button, Typography, Paper } from "@mui/material";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,8 +13,7 @@ const LoginPage = () => {
   };
 
   return (
-    <Box sx={{ height: '98vh', display: 'flex' }}>
-
+    <Box sx={{ height: "98vh", display: "flex" }}>
       {/* imagen */}
       <Box
         component={Paper}
@@ -28,10 +21,10 @@ const LoginPage = () => {
         square
         sx={{
           flex: 1,
-          display: { xs: 'none', sm: 'block' },
-          backgroundImage: 'url(/images/loginImage.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          display: { xs: "none", sm: "block" },
+          backgroundImage: "url(/images/loginImage.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
@@ -42,13 +35,13 @@ const LoginPage = () => {
         square
         sx={{
           flex: 1,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           px: 4,
         }}
       >
-        <Box sx={{ width: '100%', maxWidth: 400 }}>
+        <Box sx={{ width: "100%", maxWidth: 400 }}>
           <Typography component="h1" variant="h5" textAlign="center" mb={2}>
             Iniciar sesión
           </Typography>
@@ -81,8 +74,8 @@ const LoginPage = () => {
             >
               Ingresar
             </Button>
-            <Typography variant='body2' align='center' sx={{ mt: 2 }}>
-              ¿Eres Veterinario y no tienes cuenta? {" "}
+            <Typography variant="body2" align="center" sx={{ mt: 2 }}>
+              ¿Eres Veterinario y no tienes cuenta?{" "}
               <Link to="/registroVeterinario">Registrate aquí</Link>
             </Typography>
           </Box>

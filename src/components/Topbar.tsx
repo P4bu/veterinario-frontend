@@ -1,9 +1,9 @@
-import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import AccountCircle from '@mui/icons-material/AccountCircle';
+import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import AccountCircle from "@mui/icons-material/AccountCircle";
 
 const Topbar = () => (
-  <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>
+  <AppBar position="static" sx={{ backgroundColor: "#1976d2" }}>
     <Toolbar>
       <Typography variant="h6" sx={{ flexGrow: 1 }}>
         Panel Administrativo
