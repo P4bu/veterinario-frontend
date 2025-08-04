@@ -5,6 +5,7 @@ import {
   Typography,
   Paper,
 } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const LoginPage = () => {
@@ -77,6 +78,10 @@ const LoginPage = () => {
             >
               Ingresar
             </Button>
+            <Typography variant='body2' align='center' sx={{ mt: 2 }}>
+              ¿Eres Veterinario y no tienes cuenta? {" "}
+              <Link to="/registroVeterinario">Registrate aquí</Link>
+            </Typography>
           </Box>
         </Box>
       </Box>

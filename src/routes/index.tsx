@@ -1,12 +1,14 @@
 import { Routes, Route } from "react-router-dom"
 import LoginPage from "../pages/LoginPage"
 import DashboardPage from "../pages/DashboardPage"
+import VeterinarioForm from "../components/VeterinarioForm"
 
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<LoginPage />} />
+            <Route path="login" element={<LoginPage />} />
             <Route path="home" element={<DashboardPage />} />
+            <Route path="registroVeterinario" element={<VeterinarioForm />} />
         </Routes>
     )
 }
