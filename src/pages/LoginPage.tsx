@@ -23,6 +23,9 @@ const LoginPage = () => {
 
       {/* imagen */}
       <Box
+        component={Paper}
+        elevation={6}
+        square
         sx={{
           flex: 1,
           display: { xs: 'none', sm: 'block' },
