@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Box, Typography, Paper, TextField, Grid, Button } from "@mui/material";
-
-interface VeterinarioDTO {
-  nombre: string;
-  apellidoPaterno: string;
-  apellidoMaterno: string;
-  rut: string;
-  email: string;
-  telefono: string;
-  especialidad: string;
-  password: string;
-}
+import type { VeterinarioDTO } from "../types/VeterinarioDTO";
+import { 
+  Box, 
+  Typography, 
+  Paper, 
+  TextField, 
+  Grid, 
+  Button 
+} from "@mui/material";
 
 const VeterinarioForm = () => {
   const [formData, setFormData] = useState<VeterinarioDTO>({

@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import { Outlet } from "react-router-dom";
+import MascotaForm from "../components/MascotaForm";
 
 const DashboardPage = () => (
   <Box sx={{ display: "flex", height: "100vh" }}>
@@ -23,6 +24,7 @@ const DashboardPage = () => (
 
       <Box sx={{ p: 3 }}>
         <Outlet />
+        <MascotaForm /> {/* prueba, solo para verlo, se debe manejar los menus */}
       </Box>
     </Box>
   </Box>
