@@ -1,5 +1,9 @@
 const PacienteForm = () => {
-  return <></>;
+  return (
+    <>
+      
+    </>
+  )
 };
 
 export default PacienteForm;
